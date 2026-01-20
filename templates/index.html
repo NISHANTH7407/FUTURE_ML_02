@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Support Ticket Classifier</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+<h2>Support Ticket Classification</h2>
+<form method="POST">
+<textarea name="ticket" placeholder="Enter ticket text" required></textarea>
+<button type="submit">Analyze</button>
+</form>
+{% if category %}
+<p><b>Category:</b> {{ category }}</p>
+<p><b>Priority:</b> {{ priority }}</p>
+{% endif %}
+</div>
+</body>
+</html>
